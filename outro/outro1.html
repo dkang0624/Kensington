@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>모든 이야기가 끝났습니다</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      color: #ede3c8;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.2);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.2);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      background-color: rgba(0, 0, 0, 0.35);
+      padding: 60px 28px;
+      border-radius: 10px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      line-height: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .text {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .next-btn {
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">모든 이야기가 끝났습니다</div>
+    <div class="text">
+켄싱턴 마켓은  
+오래전 이민자들이 삶을 일으켜 세운 거리였습니다.
+
+그들의 발자국, 손자국, 목소리, 간판 하나하나—  
+지금은 모두 사라졌지만,  
+그 흔적은 이 거리에 작품처럼 남아  
+당신을 이끌어왔습니다.
+
+그리고 지금,  
+당신이 복원한 감정도  
+이 거리의 한 조각이 되어  
+그 작품이 되어가겠죠.
+    </div>
+    <button class="next-btn" onclick="location.href='outro2.html'">계속</button>
+  </div>
+</body>
+</html>

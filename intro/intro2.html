@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>인트로 2 - 기억 서사</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      height: auto;
+      overflow-y: auto;
+    }
+
+    body {
+      color: #ede3c8;
+      font-family: 'Gowun Dodum', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      padding: 40px 24px;
+      position: relative;
+      line-height: 2rem;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      z-index: 0;
+    }
+
+    .story-container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 40px 28px;
+      border-radius: 8px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .story {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2rem;
+    }
+
+    .next-btn {
+      margin-top: 1.5rem;
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      align-self: center;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="story-container">
+    <div class="title">기억을 봉인한 거리</div>
+    <div class="story">
+도시는 건물로만 만들어지지 않는다.
+
+사람이,
+이름이,
+손때가,
+남겨진 이야기들이
+도시를 만든다.
+
+하지만 오래된 거리에는
+말로 남지 않은 기억들이 있다.
+
+누가 울었는지,
+누가 도망쳤는지,
+누가 웃었는지조차
+아무도 묻지 않는다.
+
+켄싱턴 마켓에는
+그런 기억들이 있다.
+
+지워지지 않은 이름,
+묻히지 않은 표정,
+그리고 아직 꺼내지 않은 이야기들.
+
+이제 그 이야기를
+당신이 열어야 한다.
+    </div>
+    <button class="next-btn" onclick="location.href='intro3.html'">계속</button>
+  </div>
+</body>
+</html>

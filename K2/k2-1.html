@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K2-1 - 두 번째 기억</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    body {
+      color: #ede3c8;
+      font-family: 'Gowun Dodum', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 40px 28px;
+      border-radius: 12px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      font-size: 1.3rem;
+      color: #f0e7d8;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+      text-shadow: 0 0 4px rgba(0,0,0,0.6);
+    }
+
+    .title {
+      font-family: 'IM Fell English', serif;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .story {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2rem;
+    }
+
+    .next-btn {
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      align-self: center;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">두 번째 기억 – 「그 계산대 옆에 앉아 있던 애 말이야」</div>
+
+    <div class="story">
+켄싱턴 마켓 골목 안,  
+한 아이가 있었습니다.
+
+그 아이는 작은 식료품 가게  
+계산대 옆에 항상 앉아 있었습니다.
+
+손님이 사과를 사면  
+“30센트요”  
+우유를 사면  
+“55센트요.”
+
+그 아이에게  
+숫자는 장난감이었습니다.
+
+하지만 정말 웃긴 건,  
+켄싱턴 골목의 그 숫자 놀음이  
+그렇게 누군가의 시작이 되어  
+도시 전체를 움직이게 될 줄은  
+아무도 몰랐습니다.
+    </div>
+
+    <button class="next-btn" onclick="location.href='k2-2.html'">계속</button>
+  </div>
+</body>
+</html>

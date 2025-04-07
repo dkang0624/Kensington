@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K1 - 첫 번째 기억</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ede3c8;
+      text-align: center;
+      padding: 0 24px;
+      font-family: 'Gowun Dodum', sans-serif;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    .title {
+      font-family: 'IM Fell English', serif;
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .quote {
+      font-size: 1rem;
+      font-style: italic;
+      opacity: 0.85;
+      margin-bottom: 2.5rem;
+    }
+
+    .start-btn {
+      padding: 0.6em 2.5em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      transition: all 0.2s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="subtitle">첫 번째 기억</div>
+    <div class="title">「이름을 잃지 않은 사람」</div>
+    <div class="quote">“그의 이름은 간판 위에 있다.”</div>
+    <button class="start-btn" onclick="location.href='k1-1.html'">기억을 열기</button>
+  </div>
+</body>
+</html>

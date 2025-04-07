@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K2-5 - 멜 라스트만</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      color: #ede3c8;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(5px) brightness(0.9) contrast(0.9) sepia(0.3);
+      -webkit-backdrop-filter: blur(5px) brightness(0.9) contrast(0.9) sepia(0.3);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      background-color: rgba(0, 0, 0, 0.35);
+      padding: 40px 28px;
+      border-radius: 10px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      line-height: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .story {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2.5rem;
+    }
+
+    .next-btn {
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      align-self: center;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">멜 라스트만(Mel Lastman)의 어린 시절</div>
+    <div class="story">
+멜 라스트만은  
+폴란드 출신 유대인 부모님 사이에서  
+1933년, 바로 이곳 켄싱턴에서 태어났습니다.  
+
+그는 항상 부모님의 식료품 가게  
+계산대 옆에 앉아 있었습니다.  
+
+“사과는 10센트, 계란은 20센트…  
+맞아, 총 30센트.”  
+
+그렇게 숫자를 가지고 놀던 아이는  
+스물두 살이 되던 해, 유명한 가구회사 사장이 됩니다.  
+
+하지만 멜의 길을 진짜 바꾼 건  
+장사보다도,  
+이 거리에서 다문화를 자연스럽게 경험한 유년 시절이었습니다.  
+
+그는 이곳에서  
+언어가 다르고, 신앙이 달라도 함께 살아가는 법을 배웠고,  
+그 경험은 훗날 한 도시 전체를 이해하는 능력으로 자라났습니다.
+    </div>
+    <button class="next-btn" onclick="location.href='k2-6.html'">계속</button>
+  </div>
+</body>
+</html>

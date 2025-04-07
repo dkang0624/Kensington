@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K2-6 - 그의 길, 도시의 길</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      color: #ede3c8;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(5px) brightness(0.9) contrast(0.9) sepia(0.2);
+      -webkit-backdrop-filter: blur(5px) brightness(0.9) contrast(0.9) sepia(0.2);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      background-color: rgba(0, 0, 0, 0.35);
+      padding: 40px 28px;
+      border-radius: 10px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      line-height: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .story {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2.5rem;
+    }
+
+    .next-btn {
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      align-self: center;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">그의 길, 도시의 길</div>
+    <div class="story">
+멜은 1972년,  
+노스욕(North York)의 시장이 되었고  
+무려 10번 연임을 이어갑니다.  
+
+그리고 1998년,  
+6개의 도시가 하나로 합쳐지면서  
+지금의 통합 토론토가 탄생했을 때—  
+
+그는 그 도시의  
+첫 번째 시장이 되었습니다.  
+
+지금도 노스욕 시청 앞에는  
+그의 이름을 딴 광장,  
+<strong>Mel Lastman Square</strong>가 남아 있습니다.  
+
+그가 한때  
+이 도시를 대표하는 목소리였다는  
+증거처럼 말이죠.
+    </div>
+    <button class="next-btn" onclick="location.href='k2-7.html'">계속</button>
+  </div>
+</body>
+</html>
+7

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>인트로 5 - 지도로 이어지는 이야기</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      height: auto;
+      overflow-y: auto;
+    }
+
+    body {
+      color: #ede3c8;
+      font-family: 'Gowun Dodum', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 24px;
+      position: relative;
+      line-height: 2rem;
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.4);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 40px 28px;
+      border-radius: 8px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .text {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2rem;
+    }
+
+    .download-btn {
+      margin-bottom: 2rem;
+      padding: 0.6em 1.8em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+      transition: all 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+이제 당신 차례입니다.
+
+시작 전, 아래 지도를 다운로드하세요.
+    </div>
+
+    <a href="img/kensington_map.jpg" download="kensington_map.jpg" class="download-btn">
+      지도 이미지 다운로드
+    </a>
+
+    <div class="text">
+준비가 되셨다면 지도에 표시된  
+“벨뷰 공원”으로 이동해주세요.
+
+그 곳에서 첫 번째 이야기가 시작됩니다.
+    </div>
+  </div>
+</body>
+</html>

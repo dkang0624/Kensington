@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>수고하셨습니다.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    body {
+      font-family: 'Gowun Dodum', sans-serif;
+      color: #ede3c8;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.2);
+      -webkit-backdrop-filter: blur(6px) brightness(0.9) contrast(0.9) sepia(0.2);
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      max-width: 720px;
+      background-color: rgba(0, 0, 0, 0.35);
+      padding: 40px 28px;
+      border-radius: 10px;
+      text-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+      line-height: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .story {
+      font-size: 1.1rem;
+      white-space: pre-line;
+      margin-bottom: 2.5rem;
+      text-align: center;
+    }
+
+    .next-btn {
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Gowun Dodum', sans-serif;
+      font-weight: 500;
+      box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+      align-self: center;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">수고하셨습니다.</div>
+    <div class="story">
+당신이 지금까지 걸어온 이 거리에는  
+늘 누군가의 삶이 먼저 지나갔습니다.
+
+이 거리의 간판은  
+수도 없이 바뀌었고,
+
+상점의 주인도,  
+이 마을의 사람들도
+
+언제나 누군가에게서  
+또 다른 누군가에게로  
+조용히 넘겨졌습니다.
+
+사라진 이름,  
+남겨진 말,  
+지워진 색깔,
+
+모든 기억의 틈새를 지나—  
+당신은 여기까지 도달했습니다.
+
+이 길 위를 걸어간  
+수많은 사람들처럼,
+
+이 체험형 투어를 마친 대부분의 이들도,  
+이 땅에 발을 디딘 이민자였습니다.
+
+당신은,  
+이 길을 걸어온 이민자들의 마음을  
+조용히 뒤따라온 사람입니다.
+    </div>
+    <button class="next-btn" onclick="location.href='outro5.html'">계속</button>
+  </div>
+</body>
+</html>

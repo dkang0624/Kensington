@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>기억을 봉인한 거리 - Intro</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=Libre+Baskerville&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Libre Baskerville', serif;
+      background: url('img/old_kensington.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      color: #f4eee1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      padding: 20px;
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(216, 190, 150, 0.15);
+      backdrop-filter: sepia(0.4) brightness(0.9) contrast(0.95) blur(3px);
+      z-index: 0;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02) 1px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: inset 0 0 40px rgba(0,0,0,0.4);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .text-wrapper {
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 0 6px rgba(0,0,0,0.5);
+    }
+
+    .tour-label {
+      font-size: 1.1rem;
+      font-style: italic;
+      opacity: 0.9;
+      margin-bottom: 0.2em;
+    }
+
+    .kensington {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      font-weight: 700;
+      letter-spacing: 0.2rem;
+      color: #dec189;
+      margin-bottom: 0.2em;
+      animation: flickerOnce 4s ease-in-out 1 1.2s;
+    }
+
+    .title {
+      font-family: 'IM Fell English', serif;
+      font-size: 2.3rem;
+      letter-spacing: 0.5px;
+      color: #ede3c8;
+      margin-top: 0.1em;
+    }
+
+    @keyframes flickerOnce {
+      0%, 20% { opacity: 1; }
+      21% { opacity: 0.4; }
+      23% { opacity: 1; }
+      35% { opacity: 0.2; }
+      37% { opacity: 1; }
+      50% { opacity: 0.4; }
+      51% { opacity: 0.8; }
+      52% { opacity: 0.3; }
+      54% { opacity: 1; }
+      70% { opacity: 0.4; }
+      72% { opacity: 1; }
+      85% { opacity: 0.5; }
+      87% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+
+    .next-btn {
+      margin-top: 3rem;
+      padding: 0.6em 2em;
+      font-size: 1rem;
+      background-color: #e3d3b5;
+      color: #2b2b2b;
+      border: 1px solid #8a7f6b;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 500;
+      font-style: italic;
+      box-shadow: 2px 2px 0 rgba(0,0,0,0.3);
+      z-index: 2;
+      position: relative;
+    }
+
+    .next-btn:hover {
+      background-color: #d5c3a8;
+    }
+
+    /* 페이드아웃 전환 효과 */
+    .fade-out {
+      opacity: 0;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="text-wrapper">
+    <div class="tour-label">켄싱턴 마켓 체험형 투어</div>
+    <div class="kensington">KENSINGTON</div>
+    <div class="title">기억을 봉인한 거리</div>
+  </div>
+  <button class="next-btn" onclick="fadeAndGo()">시작</button>
+
+  <script>
+    function fadeAndGo() {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = 'intro2.html';
+      }, 1000); // 1초 후 intro2로 이동
+    }
+  </script>
+</body>
+</html>
